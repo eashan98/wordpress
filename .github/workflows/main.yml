@@ -1,0 +1,56 @@
+name: CI/CD for WordPress
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.0'
+
+      - name: Install Node.js and NPM
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+
+      - name: Secure File Transfer to VPS
+        run: |
+          # Use SCP or SFTP to transfer WordPress files to your VPS.
+          # Replace placeholders with your server details and credentials.
+          scp -i /path/to/your/private-key -r ./your-wordpress-directory user@your-server:/path/to/destination/
+
+      - name: Deploy to VPS
+        run: |
+          # Add any additional deployment steps you need here.
+
+      - name: Run Tests (optional)
+        run: |
+          # Run tests to ensure the deployment is successful.
+
+      - name: Deployment Status Checks
+        id: deployment-status
+        run: |
+          # Add status checks to verify the deployment.
+          # For example, you can check if the website is online and functioning properly.
+
+      - name: Deployment Success
+        if: steps.deployment-status.outcome == 'success'
+        run: |
+          echo "Deployment was successful."
+
+      - name: Deployment Failure
+        if: steps.deployment-status.outcome != 'success'
+        run: |
+          echo "Deployment failed. Rolling back..."
+
+# Define additional jobs if needed (e.g., testing or database updates).
