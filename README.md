@@ -60,6 +60,8 @@
 
 # Create a main.yml file in github
    .github/workflows/main.yml 
+   ![image](https://github.com/eashan98/wordpress/assets/145854811/a781d5c9-92be-46b0-b028-2091aa338589)
+
 
 
 
