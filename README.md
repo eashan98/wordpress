@@ -1,6 +1,7 @@
 # Server Setup for WordPress 
 
 # Login to Server
+  ssh -i "private-key" -p "port-number" ubuntu@"IP"
   sudo apt update
   sudo apt upgrade -y
 # Download and install MysqlDB
