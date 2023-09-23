@@ -1,4 +1,4 @@
-****Automated Deployment of WordPress Website on Nginx using GitHub Actions on AWS Clouds********
+**Automated Deployment of WordPress Website on Nginx using GitHub Actions on AWS Clouds**
 
 
 # Login to Server
