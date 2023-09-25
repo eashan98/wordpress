@@ -5,6 +5,7 @@
   ssh -i "private-key" -p "port-number" ubuntu@"IP"
   sudo apt update
   sudo apt upgrade -y
+  
 # Download and install MysqlDB
   wget https://dev.mysql.com/get/mysql-apt-config_0.8.12-1_all.deb
   sudo dpkg -i mysql-apt-config_0.8.12-1_all.deb
@@ -15,11 +16,11 @@
   sudo apt install -f mysql-client=5.7* mysql-community-server=5.7* mysql-server=5.7*
   
 
-# Install Nginx  
+# Install Nginx $ Creating Nginx config file
   sudo apt install nginx -y
+  nano /etc/nginx/sites/available/default
 
-
-# Changing th port configuration and login configuration of SSH service   
+# Changing the port configuration and login configuration of the SSH service   
   nano /etc/ssh/sshd_config
   service sshd restart
   
@@ -47,7 +48,7 @@
 
 # install the Let's encrypt ssl certificate
   sudo apt install certbot python3-certbot-nginx
-  sudo certbot --nginx -d wordpress.binbash.website
+  sudo certbot --nginx -d demo.binbash.website
 
 
 # Setup Firewall configuration 
@@ -62,7 +63,6 @@
 # Create a main.yml file in github
    .github/workflows/main.yml 
 
-   
    ![image](https://github.com/eashan98/wordpress/assets/145854811/a781d5c9-92be-46b0-b028-2091aa338589)
 
 
