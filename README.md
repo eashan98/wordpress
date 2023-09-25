@@ -22,10 +22,15 @@
 **# Install Nginx & Creating Nginx config file**
   sudo apt install nginx -y
   nano /etc/nginx/sites/available/default
+  ![image](https://github.com/eashan98/wordpress/assets/145854811/bbacfbe0-8eda-4653-83e8-30398dc48f65)
+
 
 **# Changing the port configuration and login configuration of the SSH service   **
   nano /etc/ssh/sshd_config
   service sshd restart
+  ![image](https://github.com/eashan98/wordpress/assets/145854811/f0740fff-3656-4e1b-aa3e-642bbd902407)
+
+  
   
 **# Installing php v7.4**
   sudo apt install software-properties-common
@@ -34,6 +39,8 @@
   sudo apt update
   sudo apt install php7.4-{cli,common,curl,zip,gd,mysql,xml,mbstring,json,intl}
   apt install php7.4-fpm
+  ![image](https://github.com/eashan98/wordpress/assets/145854811/f4dfd1ae-64cb-4bb2-8b04-29394dc09543)
+
   
 **# Setup the mysql server  **
   mysql -u root -p
