@@ -94,7 +94,8 @@ tar xzf ./actions-runner-linux-x64-2.309.0.tar.gz
 
 # Adding SSH keys
 create ssh-keys using ssh-keygen
-![image](https://github.com/eashan98/wordpress/assets/145854811/6a140ec2-eb77-43b6-ae33-fe4f9ad252a8)
+![image](https://github.com/eashan98/wordpress/assets/145764413/814dc407-47ba-46aa-8928-759c1cb24412)
+
 
 
 
