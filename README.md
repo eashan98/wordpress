@@ -5,7 +5,7 @@
   ssh -i "private-key" -p "port-number" ubuntu@"IP"
   sudo apt update
   sudo apt upgrade -y
-  ![image](https://github.com/eashan98/wordpress/assets/145854811/f3036018-8eef-40d9-af2a-1c4b8d58fd3d)
+  
 
   
   
@@ -22,14 +22,12 @@
 # Install Nginx & Creating Nginx config file
   sudo apt install nginx -y
   nano /etc/nginx/sites/available/default
-  ![image](https://github.com/eashan98/wordpress/assets/145854811/bbacfbe0-8eda-4653-83e8-30398dc48f65)
-
+ 
 
 # Changing the port configuration and login configuration of the SSH service
   nano /etc/ssh/sshd_config
   service sshd restart
-  ![image](https://github.com/eashan98/wordpress/assets/145854811/f0740fff-3656-4e1b-aa3e-642bbd902407)
-
+  
   
   
 # Installing php v7.4
@@ -39,7 +37,7 @@
   sudo apt update
   sudo apt install php7.4-{cli,common,curl,zip,gd,mysql,xml,mbstring,json,intl}
   apt install php7.4-fpm
-  ![image](https://github.com/eashan98/wordpress/assets/145854811/f4dfd1ae-64cb-4bb2-8b04-29394dc09543)
+ 
 
   
 # Setup the mysql server
@@ -54,8 +52,7 @@
   nano /etc/nginx/sites-available/default 
   service nginx restart
   
-  ![image](https://github.com/eashan98/wordpress/assets/145854811/43108b81-3b4e-49c4-aad7-d5d66c0650ff)
-
+ 
   
 
 
@@ -76,8 +73,7 @@
 # Create a main.yml file in GitHub
    .github/workflows/main.yml 
 
- ![image](https://github.com/eashan98/wordpress/assets/145854811/ddb172fa-2b49-4cca-94d5-2d2ce13eb778)
-
+ 
 
 
 
@@ -88,13 +84,13 @@ echo "2974243bab2a282349ac833475d241d5273605d3628f0685bd07fb5530f9bb1a  actions-
 tar xzf ./actions-runner-linux-x64-2.309.0.tar.gz
 ./config.sh --url https://github.com/demo123455675685/actiondemo --token BCYZCWYYIGJJDLDNREAUVYLFCHBWU
 ./run.sh
-![image](https://github.com/eashan98/wordpress/assets/145854811/df6a8110-a324-48a5-9118-d77bc3a42291)
+
 
 
 
 # Adding SSH keys
 create ssh-keys using ssh-keygen
-![image](https://github.com/eashan98/wordpress/assets/145764413/814dc407-47ba-46aa-8928-759c1cb24412)
+
 
 
 
